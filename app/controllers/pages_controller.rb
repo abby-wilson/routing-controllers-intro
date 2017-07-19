@@ -5,7 +5,11 @@ def welcome
 end
 
 def about
-  render :about 
+  render :about
 end
+
+def contest
+  render :contest
+end 
 
 end

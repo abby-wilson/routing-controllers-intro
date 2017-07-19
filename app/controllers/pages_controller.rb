@@ -11,7 +11,7 @@ end
 
 def contest
   flash[:notice] = "Sorry, the contest has ended"
-  redirect_to "/welcome"
+  redirect_to welcome_path
 end
 
 def kitten
@@ -30,7 +30,7 @@ def secrets
   if params[:magic_word] == magic_word
   else
     flash[:notice] = "You do not have the correct credentials to enter this page"
-    redirect_to "/welcome"
+    redirect_to welcome_path
   end
 
 end
